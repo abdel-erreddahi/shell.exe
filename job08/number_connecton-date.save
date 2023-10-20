@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Spécifiez le chemin de votre fichier
+fichier="/chemin/vers/votre/fichier"
+
+while true; do
+    # Utilisation de la commande stat pour obtenir la date de création
+    date_creation=$(stat -c '%y' "$fichier")
+
+    # Formatez la date au format jj-mm-aaaa-HH:MM
+    date_formattee=$(date -d "$date_creation" +'%d-%m-%Y-%H:%M')
+
+    echo "Date de création de $fichier : $date_formattee"
+
+    # Définissez l'intervalle entre les 
+
+
+
+
+
